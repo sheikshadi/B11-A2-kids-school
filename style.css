@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.bg-header{
+    justify-items: center;
+}
+
+.display-gride{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+.display-flex{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+#id-btn{
+    background-color: orange;
+    color: white;
+    width: 197px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 25px;
+}
+ul > li{
+    list-style: none;
+}
+ul > li a{
+    text-decoration: none;
+    font-family: 'Quicksand';
+}
+#ul-item1 a{
+    color: orange;
+}
+#ul-item2 a{
+    color: skyblue;
+}
+#ul-item3 a{
+    color: #05D4DF;
+}
+#ul-item4 a{
+    color: #5D58EF;
+}
+
+/* empower students */
+.banner{
+    background-image: url(assets/bg.png);
+}
+.banner-content{
+    margin: auto;
+    width: 300px;
+}
+.banner-title{
+    font-weight: 900;
+}
+ 
+ 
+
+@media screen and (max-width: 576px){
+    .bg-header{
+        display: flex; 
+    }
+    .item{
+        display:none;
+    }
+    #id-btn{
+        display: none;
+    }
+    .fa-solid{
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:577px) {
+    .fa-solid{
+        display: none;
+    }
+}
