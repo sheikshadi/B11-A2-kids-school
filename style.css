@@ -52,7 +52,31 @@ ul > li a{
     width: 300px;
 }
 .banner-title{
+    color: orange;
     font-weight: 900;
+}
+.banner-description{
+    width: 300px;
+}
+#btn-primary{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.banner-image{
+    margin: auto;
+}
+
+/* main */
+.menu-title{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    width: 450px;
+    height: 60px;
 }
  
  
@@ -75,5 +99,11 @@ ul > li a{
 @media screen and (min-width:577px) {
     .fa-solid{
         display: none;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .banner{
+        flex-direction: column;
     }
 }
