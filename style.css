@@ -67,6 +67,7 @@ ul > li a{
     border: none;
 }
 .banner-image{
+    width: 400px;
     margin: auto;
 }
 
@@ -83,11 +84,7 @@ ul > li a{
 .menu-content{
     width: 370px;
     height: 370px;
-    /* box-shadow: 1px 1px 10px 5px #DEF5FF ; */
-    /* border: 1px solid saddlebrown; */
-    box-shadow: 
-    inset 0 2em 3em rgb(0 200 0 / 30%),
-    0 0 0 2px white;
+    box-shadow: 1px 1px 10px 5px #DEF5FF;
     border-radius: 10px;
     justify-items: center;
 
@@ -102,11 +99,83 @@ ul > li a{
     color: #64C8FF;
     font-weight: 900;
 }
- 
+.menu-read1{
+    text-decoration: none;
+    font-weight: 900;
+    color: orange;
+}
+.menu-read2{
+    text-decoration: none;
+    font-weight: 900;
+    color: #8700FF;
+}
 
+/* our stories */
+.our-stories{
+    background-image: url(assets/bg.png);
+    box-shadow: 1px 1px 10px 5px #DEF5FF;
+    margin-top: 30px;
+}
+.stories-content{
+    position: relative;
+    width: 540px;
+    height: 630px;
+    border-radius: 5% 5% 5% 5%;
+    border: 1px solid black;
+}
+.stories-img{
+    border-radius: 5% 5% 0 0;
+}
+.stories-btn{
+    position: absolute;
+    background-color: orange;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border: none;
+    left: 0;
+    bottom: 280px;
+    /* margin-top: -50px; */
+    border-radius: 20px;
+}
+
+/* our history */
+.our-history{
+    position: relative;
+    background-color: rgb(245, 242, 242);
+    border-radius: 0 0 5% 5%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.history-btn{
+    position: absolute;
+    background-color: orange;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    left: 100px;
+    top: 160px;
+}
+
+.main-history{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.history-img{
+    border-radius: 5% 5% 0 0;
+}
+.history-description{
+    text-align: center;
+    margin-top: 40px;
+}
 @media screen and (max-width: 576px){
     .bg-header{
-        display: flex; 
+        display: flex;
+        align-items: center;
     }
     .item{
         display:none;
@@ -126,7 +195,13 @@ ul > li a{
 }
 
 @media screen and (max-width:576px) {
-    .banner{
+    .banner, .main-menu, .our-stories{
         flex-direction: column;
+    }
+}
+@media screen and (max-width:576px) {
+    .main-history{
+        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 }
